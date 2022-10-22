@@ -1,0 +1,175 @@
+body {
+    font-family: 'inter', sans-serif;
+    background-image: url(../assets/pexels-photomix-company-96627.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.image {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 280px;
+
+}
+
+.cards {
+    display: flex;
+    padding: 20px 20%;
+
+}
+
+
+.left {
+    background: #99AA38;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    background-size: auto;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+}
+
+
+.title {
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+
+}
+
+.left .context {
+    color: #fff;
+    margin-top: 100px;
+    font-size: 19px;
+    text-align: center;
+
+}
+
+.left .btn-cad {
+    background-color: #99AA38;
+    border-color: #fff;
+    border-radius: 7px;
+    color: #fff;
+    margin-top: 16px;
+    font-size: 24px;
+    line-height: 0;
+    padding: 0 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+
+
+}
+
+.left .btn-cad:hover {
+    background-color: #819029;
+
+}
+
+.right {
+    background-color: #0e4d16;
+    color: #fff;
+    width: 50%;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+    box-sizing: border-box;
+
+}
+
+.right .input {
+    border-radius: 4px;
+    width: 100%;
+    border-width: 1px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.right .btn-finals {
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+.right .btn-finals .rec-senha {
+    border-radius: 7px;
+    border-color: #fff;
+    background: #0e4d16;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+
+.right .btn-finals .rec-senha:hover {
+    background-color: #083b0f;
+
+}
+
+.right .btn-finals .login {
+    border-radius: 7px;
+    border-color: #fff;
+    background: #0e4d16;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.right .btn-finals .login:hover {
+    background-color: #083b0f;
+}
+
+.right .title-2 {
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 60px;
+}
+
+.only-mobile{
+    display: none;
+}
+
+
+@media (max-width:768px) {
+    .cards {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+
+    .left , .right{
+        width: 100%;
+        min-height: 500px;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .only-mobile {
+        display: block;
+    }
+
+
+
+}
